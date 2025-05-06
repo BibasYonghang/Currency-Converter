@@ -1,0 +1,174 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+
+
+@media (min-width: 900px) {
+    .main {
+        background-color: #f0f0f0;
+        height: 645px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project {
+        background-color: rgb(33, 13, 13);
+        width: 350px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: white;
+
+    }
+
+    .head {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .head-input {
+        outline: none;
+        height: 20px;
+        width: 120px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+    }
+
+    .head-input:hover {
+        box-shadow: 0 0 5px 1px white;
+    }
+
+    .check-btn {
+        height: 20px;
+        width: 50px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+    }
+
+    .country {
+        display: flex;
+        margin-top: 20px;
+
+    }
+
+    .currency {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+    }
+
+    .currency p {
+        margin-right: 10px;
+    }
+
+    .select {
+        border: 2px solid transparent;
+        outline: none;
+        border-radius: 5px;
+    }
+
+    .converter-image {
+        height: 30px;
+        width: 30px;
+        margin: 40px 30px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .main {
+        background-color: rgb(60, 204, 130);
+        height: 645px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project {
+        background-color: rgb(33, 13, 13);
+        width: 350px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: white;
+
+    }
+
+    .head {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .head-input {
+        outline: none;
+        height: 20px;
+        width: 120px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+    }
+
+    .head-input:hover {
+        box-shadow: 0 0 5px 1px white;
+        transition: box-shadow 0.1s ease-in-out;
+    }
+
+    .check-btn {
+        height: 20px;
+        width: 50px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+    }
+
+    .country {
+        display: flex;
+        margin-top: 20px;
+
+    }
+
+    .currency {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+    }
+
+    .currency p {
+        margin-right: 10px;
+    }
+
+    .select {
+        border: 2px solid transparent;
+        outline: none;
+        border-radius: 5px;
+    }
+
+    .converter-image {
+        height: 30px;
+        width: 30px;
+        margin: 40px 30px;
+    }
+
+}
