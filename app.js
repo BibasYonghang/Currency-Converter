@@ -5,7 +5,7 @@ const toCurr = document.querySelector("#select2");
 const btn = document.querySelector(".check-btn");
 const resultDiv = document.querySelector(".result");
 
-import { countryList } from './country.js'
+import { countryList } from './newFolder/country.js'
 
 // Populate dropdowns
 for (let select of currencySelect) {
