@@ -2,50 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Converter</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <form action="">
-        <div class="main">
-            <div class="project">
-                <div class="head">
+  <form>
+    <div class="background">
 
-                    <h1> Currency Converter </h1>
-
-                    <h3>Enter Amount</h3>
-                    <input type="text" class="head-input">
-                    <div>
-                        <button class="check-btn">check</button>
-                    </div>
-                </div>
-                <div class="country">
-                    <div class="currency">
-                        <p>From</p>
-                        <img src="https://flagsapi.com/NP/flat/64.png" alt="image">
-                        <select class="select">
-                            <option value="rupees" selected>RUPEES</option>
-                            <option value="usd">USD</option>
-                        </select>
-                    </div>
-                    <img src="image.png" alt="image" class="converter-image">
-
-                    <div class="currency">
-                        <p>To</p>
-                        <img src="https://flagsapi.com/US/flat/64.png" alt="image">
-                        <select class="select">
-                            <option value="usd" selected>USD</option>
-                            <option value="rupees">RUPEES</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+      <div class="content">
+        <div class="title">
+          <h1>Currency Converter</h1>
+          <input type="text" class="input-amount" placeholder="Enter Amount" />
+          <div class="result">Converted Amount</div>
         </div>
-    </form>
-    <script src="script.js"></script>
+
+        <div class="country">
+          <div class="currency">
+            <p>From</p>
+            <img src="https://flagsapi.com/NP/flat/64.png" alt="flag" />
+            <select name="from" class="select" id="select1"></select>
+          </div>
+          <img src="image.png" alt="swap" class="converter-image" />
+          <div class="currency">
+            <p>To</p>
+            <img src="https://flagsapi.com/US/flat/64.png" alt="flag" />
+            <select name="to" class="select" id="select2"></select>
+          </div>
+        </div>
+
+        <div>
+          <button class="check-btn" type="button">Get Exchange</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="scroll">
+      <h2>Scroll down to discover 👇</h2>
+    </div>
+  </form>
+
+
+
+  <div class="info-section-parent">
+    <div class="info-section">
+      <h2>How the Currency Converter Works</h2>
+      <p><b>
+          Our Currency Converter app provides accurate, real-time currency exchange rates to help you convert any amount
+          between global currencies instantly. Leveraging a reliable public API, it fetches the latest exchange rates
+          and
+          dynamically updates the conversion based on your selected currencies and amount.
+
+          Simply enter the amount, select the currencies you want to convert from and to, and get
+          immediate results.
+          Powered by a trusted external exchange rate API, ensuring up-to-date and accurate currency
+          values.
+          Country flags update automatically based on your currency selection for quick visual reference.
+          Built with modern JavaScript and asynchronous fetch calls, providing smooth interaction and
+          error handling for the best user experience.
+          Designed to be responsive across all devices with minimal load times.
+
+          Whether you’re traveling, trading, or managing finances, this tool is a reliable companion to convert
+          currencies
+          with ease and confidence.
+        </b></p>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
 </body>
 
 </html>
