@@ -4,74 +4,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Currency Converter</title>
+
+  <!-- SEO Basics -->
+  <title>Currency Converter | Real-Time Exchange Rates</title>
+  <meta name="description"
+    content="Convert currencies in real-time using our accurate, fast, and reliable currency converter app. Supports multiple currencies with updated exchange rates." />
+  <meta name="keywords"
+    content="currency converter, exchange rates, real-time, money conversion, forex, USD to EUR, NPR to USD" />
+  <meta name="author" content="Bibas Yonghang" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Currency Converter | Real-Time Exchange Rates" />
+  <meta property="og:description"
+    content="Convert currencies instantly with our real-time exchange rate converter. Simple, fast, and reliable." />
+  <meta property="og:image" content="https://yourdomain.com/images/cover.jpg" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Currency Converter | Real-Time Exchange Rates" />
+  <meta name="twitter:description" content="Convert currencies instantly with our real-time exchange rate converter." />
+  <meta name="twitter:image" content="https://yourdomain.com/images/cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <form>
-    <div class="background">
+  <main class="container" role="main">
+    <div class="content">
 
-      <div class="content">
-        <div class="title">
-          <h1>Currency Converter</h1>
-          <input type="text" class="input-amount" placeholder="Enter Amount" />
-          <div class="msg">Converted Amount</div>
+      <!-- Title & Input Section -->
+      <header class="title">
+        <h1>Currency Converter</h1>
+        <input type="text" class="input-amount" id="amount" placeholder="Enter Amount"
+          aria-label="Enter amount to convert" />
+        <div class="msg" aria-live="polite">Converted Amount</div>
+      </header>
+
+      <!-- Currency Dropdowns -->
+      <section class="dropdown" aria-label="Currency Selection">
+        <!-- From Currency -->
+        <div class="currency">
+          <label for="select1">From</label>
+          <img src="https://flagsapi.com/NP/flat/64.png" alt="Nepal flag" loading="lazy" />
+          <select class="select" id="select1" aria-label="From currency dropdown"></select>
         </div>
 
-        <div class="dropdown">
-          <div class="currency">
-            <p>From</p>
-            <img src="https://flagsapi.com/NP/flat/64.png" alt="flag" />
-            <select name="from" class="select" id="select1"></select>
-          </div>
-          <img src="image.png" alt="swap" class="converter-image" />
-          <div class="currency">
-            <p>To</p>
-            <img src="https://flagsapi.com/US/flat/64.png" alt="flag" />
-            <select name="to" class="select" id="select2"></select>
-          </div>
+        <!-- Swap Icon -->
+        <img src="image.png" alt="Swap currencies" class="converter-image" loading="lazy" />
+
+        <!-- To Currency -->
+        <div class="currency">
+          <label for="select2">To</label>
+          <img src="https://flagsapi.com/US/flat/64.png" alt="US flag" loading="lazy" />
+          <select class="select" id="select2" aria-label="To currency dropdown"></select>
         </div>
+      </section>
 
-        <div>
-          <button class="check-btn" type="button">Get Exchange</button>
-        </div>
-      </div>
-
+      <!-- Button -->
+      <button class="check-btn" type="button" aria-label="Convert currency">
+        Get Exchange
+      </button>
     </div>
 
-    <div class="scroll">
-      <h2>Scroll down to discover 👇</h2>
-    </div>
-  </form>
+    <!-- Info Section -->
+    <section class="info-section" aria-labelledby="description-title">
+      <h2 id="description-title" class="des-title">How the Currency Converter App Works</h2>
 
+      <p>
+        Our Currency Converter app provides accurate, real-time exchange rates to help you convert any amount
+        between global currencies instantly. It fetches the latest exchange rates from a trusted API
+        and dynamically updates results based on your selections.
+      </p>
 
+      <p>
+        Simply enter the amount, select the currencies, and see instant results. Country flags update automatically for
+        visual clarity.
+      </p>
 
-  <div class="info-section-parent">
-    <div class="info-section">
-      <h2>How the Currency Converter Works</h2>
-      <p><b>
-          Our Currency Converter app provides accurate, real-time currency exchange rates to help you convert any amount
-          between global currencies instantly. Leveraging a reliable public API, it fetches the latest exchange rates
-          and
-          dynamically updates the conversion based on your selected currencies and amount.
+      <p>
+        Built with modern JavaScript and fetch calls, the app ensures smooth interaction and reliable error handling
+        across all devices.
+      </p>
 
-          Simply enter the amount, select the currencies you want to convert from and to, and get
-          immediate results.
-          Powered by a trusted external exchange rate API, ensuring up-to-date and accurate currency
-          values.
-          Country flags update automatically based on your currency selection for quick visual reference.
-          Built with modern JavaScript and asynchronous fetch calls, providing smooth interaction and
-          error handling for the best user experience.
-          Designed to be responsive across all devices with minimal load times.
+      <p>
+        Whether you're traveling, trading, or managing finances, this tool is your go-to for easy, accurate currency
+        conversion.
+      </p>
+    </section>
+  </main>
 
-          Whether you’re traveling, trading, or managing finances, this tool is a reliable companion to convert
-          currencies
-          with ease and confidence.
-        </b></p>
-    </div>
-  </div>
-
+  <!-- Scripts -->
   <script type="module" src="app.js"></script>
 </body>
 
