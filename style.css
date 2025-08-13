@@ -116,7 +116,7 @@
 }
 
 /* ========== Tablet (500px - 899px) ========== */
-@media (min-width: 500px) and (max-width: 799px) {
+@media (min-width: 600px) and (max-width: 799px) {
     .container {
         width: 100vw;
         height: 100vh;
@@ -166,7 +166,7 @@
 }
 
 /* ========== Mobile (<= 499px) ========== */
-@media (max-width: 499px) {
+@media (max-width: 599px) {
     .container {
         width: 100vw;
         background-color: rgb(201, 62, 7);
@@ -209,7 +209,6 @@
         text-align: justify;
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
     }
 
